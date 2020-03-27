@@ -180,10 +180,10 @@ class App extends React.Component {
       </ul>
 
       <ul>
-        {this.state.arrName.map(item => {
+        {this.state.arrName.map((item,index) => {
           return <li> Your name : {item} 
-          <button onClick={this.delete(deleteindexfn)}>Delete</button>
-          <button onClick={this.edit}>Edit</button>
+          <button onClick={this.delete(index)}>Delete</button>
+          {/* <button onClick={this.edit(index)}>Edit</button> */}
 
           </li>
         })}
@@ -195,4 +195,4 @@ class App extends React.Component {
 
 }
 
-expor
+export default App;
